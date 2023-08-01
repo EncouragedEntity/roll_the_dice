@@ -11,9 +11,11 @@ class DiceRoller extends StatefulWidget {
 
 class _DiceRollerState extends State<DiceRoller> {
   var currentDiceNum = 1;
+  final rnd = Random();
+
   void rollTheDice() {
     setState(() {
-      currentDiceNum = Random().nextInt(6) + 1;
+      currentDiceNum = rnd.nextInt(6) + 1;
     });
   }
 
