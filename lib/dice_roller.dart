@@ -13,7 +13,7 @@ class _DiceRollerState extends State<DiceRoller> {
   var activeDiceImage = 'assets/images/dice-1.png';
 
   void rollTheDice() {
-    var randomNum = Random().nextInt(5) + 1;
+    var randomNum = Random().nextInt(6) + 1;
     setState(() {
       activeDiceImage = 'assets/images/dice-$randomNum.png';
     });
